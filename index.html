@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;700;800&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <title>yellowkitchen &mdash; Food delivery</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="Logo" />
+          </a>
+
+          <nav class="nav">
+            <div class="nav__icon-box">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-person"></use>
+              </svg>
+              <span class="nav__text btn-p-1">Log in</span>
+            </div>
+
+            <div class="nav__icon-box">
+              <svg class="nav__icon">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="nav__text btn-p-1">0</span>
+            </div>
+
+            <div class="nav__menu">
+              <svg class="nav__menu-icon">
+                <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+              </svg>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <div class="container">
+        <section class="hero">
+          <div class="hero__text">
+            <h1 class="u-title-accent">Your Food court at home</h1>
+            <div class="hero__order">
+              <button class="btn btn-order btn-p-1">
+                Delivery
+                <span class="p-2">Order in</span>
+              </button>
+              <button class="btn btn-order btn-p-1">
+                Takeout
+                <span class="p-2">Grab and go</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <img
+              class="hero__image-main"
+              src="img/food/Photo-plate.png"
+              alt="Food image"
+            />
+            <img
+              class="hero__image-secondary"
+              src="img/food/rucola-png.png"
+              alt="Ruccola image"
+            />
+            <div class="hero__image-tertiary">
+              <img src="img/misc/arrow.svg" alt="Arrow image" />
+              <p class="p-1">Fresh salad, Il Pasifigio</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- USP SECTION -->
+      <section class="usp">
+        <div class="usp__icon-box">
+          <svg class="usp__icon">
+            <use xlink:href="img/sprite.svg#icon-time-eat"></use>
+          </svg>
+          <span class="p-1"
+            >Delivery in all Paris <br />
+            in less than 30 minutes</span
+          >
+        </div>
+        <div class="usp__icon-box">
+          <svg class="usp__icon">
+            <use xlink:href="img/sprite.svg#icon-delivery"></use>
+          </svg>
+          <span class="p-1"
+            >Free delivery <br />
+            from 29 euros</span
+          >
+        </div>
+        <div class="usp__icon-box">
+          <svg class="usp__icon">
+            <use xlink:href="img/sprite.svg#icon-paris"></use>
+          </svg>
+          <span class="p-1"
+            >Only fresh <br />
+            and French products</span
+          >
+        </div>
+      </section>
+
+      <!-- RESTAURANTS SECTION -->
+      <section class="restaurants">
+        <div class="container">
+          <div class="restaurants__t">
+            <h2 class="u-title-1">Restaurants</h2>
+            <button class="btn btn-secondary">show all</button>
+          </div>
+
+          <div class="restaurants__slider">
+            <!-- Restaurant card -->
+            <div class="restaurants__slider-card">
+              <img
+                class="restaurants__slider-image"
+                src="img/food/Photo-base-1_.jpg"
+                alt="Food photo"
+              />
+              <div class="restaurants__slider-logo">
+                <img
+                  src="img/restaurants/burger.svg"
+                  alt="Burger d'Lice logo"
+                />
+              </div>
+            </div>
+            <!-- Restaurant card -->
+            <div class="restaurants__slider-card">
+              <img
+                class="restaurants__slider-image"
+                src="img/food/Photo-base-2_.jpg"
+                alt="Food photo"
+              />
+              <div class="restaurants__slider-logo">
+                <img
+                  src="img/restaurants/il_paster.svg"
+                  alt="Il Pastifigio logo"
+                />
+              </div>
+            </div>
+            <!-- Restaurant card -->
+            <div class="restaurants__slider-card">
+              <img
+                class="restaurants__slider-image"
+                src="img/food/Photo-base-3_.jpg"
+                alt="Food photo"
+              />
+              <div class="restaurants__slider-logo">
+                <img src="img/restaurants/believe.svg" alt="Believe logo" />
+              </div>
+            </div>
+            <!-- Restaurant card -->
+            <div class="restaurants__slider-card">
+              <img
+                class="restaurants__slider-image"
+                src="img/food/Photo-base-4_.jpg"
+                alt="Food photo"
+              />
+              <div class="restaurants__slider-logo">
+                <img
+                  src="img/restaurants/vietnamese.svg"
+                  alt="Vietnamese logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="restaurants-nearest">
+        <div class="restaurants-nearest__search-box">
+          <div class="restaurants-nearest__search-text">
+            <h2 class="u-title-1">Your nearest restaurants</h2>
+            <p class="p-1">
+              Each kitchen works with its own delivery area <br />
+              to deliver food to you as soon as possible
+            </p>
+          </div>
+          <div class="restaurants-nearest__search-input">
+            <input
+              type="text"
+              class="p-1"
+              placeholder="Enter delivery address"
+            />
+            <button class="btn btn-p-1 btn-primary">send</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="specialties">
+        <div class="container">
+          <div class="specialties__title">
+            <h2 class="u-title-1">Specialties</h2>
+            <button class="btn btn-secondary btn-p-1">show all</button>
+          </div>
+          <div class="specialties__slider">
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-bagel"></use>
+              </svg>
+              <span class="p-1">Bagel</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+              <span class="p-1">Burger</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-chicken"></use>
+              </svg>
+              <span class="p-1">Chicken</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-fish"></use>
+              </svg>
+              <span class="p-1">Fish</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-fishnchips"></use>
+              </svg>
+              <span class="p-1">Fish’Chips</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-vegan"></use>
+              </svg>
+              <span class="p-1">Salads</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-pizza"></use>
+              </svg>
+              <span class="p-1">Pizza</span>
+            </div>
+
+            <div class="specialties__slider-card">
+              <svg class="specialties__slider-icon">
+                <use xlink:href="img/sprite.svg#icon-raviolli"></use>
+              </svg>
+              <span class="p-1">Pasta</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="usp-stats">
+        <div class="usp-stats__card">
+          <p class="usp-stats__card-number">1</p>
+          <p class="u-title-2">kitchen</p>
+        </div>
+
+        <div class="usp-stats__card">
+          <p class="usp-stats__card-number">11</p>
+          <p class="u-title-2">specialties</p>
+        </div>
+
+        <div class="usp-stats__card">
+          <p class="usp-stats__card-number">11</p>
+          <p class="u-title-2">restaurants</p>
+        </div>
+
+        <div class="usp-stats__card">
+          <p class="usp-stats__card-number">1</p>
+          <p class="u-title-2">transport costs</p>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <img src="img/misc/map.jpg" alt="Map" />
+        </div>
+      </section>
+
+      <section class="instagram">
+        <div class="container">
+          <div class="instagram__title">
+            <h2 class="u-title-1">#YellowKitchens <span>in instagram</span></h2>
+          </div>
+
+          <div class="instagram__card-box">
+            <img
+              class="instagram__card"
+              src="img/instagram/insta1.png"
+              alt="Instagram photo 1"
+            />
+            <img
+              class="instagram__card"
+              src="img/instagram/insta2.png"
+              alt="Instagram photo 2"
+            />
+            <img
+              class="instagram__card"
+              src="img/instagram/insta3.png"
+              alt="Instagram photo 3"
+            />
+            <img
+              class="instagram__card"
+              src="img/instagram/insta4.png"
+              alt="Instagram photo 4"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__app-stores">
+            <div class="logo-box">
+              <a href="#" class="logo">
+                <img src="img/logo-invert.svg" alt="Logo" />
+              </a>
+            </div>
+            <div class="footer__app-stores-icons">
+              <a href="#!">
+                <img src="img/app-stores/app-img1-1.png" alt="App store logo" />
+              </a>
+              <a href="#!">
+                <img
+                  src="img/app-stores/app-img2-1.png"
+                  alt="Google play logo"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__info">
+            <div class="footer__box">
+              <h3 class="u-title-2 footer__box-title">About us</h3>
+              <ul>
+                <li class="btn-p-1">
+                  <a href="#!">Concept</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Franchise</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Business</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Restaurant signup</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">For Investors</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__box">
+              <h3 class="u-title-2 footer__box-title">Get help</h3>
+              <ul>
+                <li class="btn-p-1">
+                  <a href="#!">Read FAQs</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Restaurants</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Specialities</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">Sign up to deliver</a>
+                </li>
+                <li class="btn-p-1">
+                  <a href="#!">English</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__box">
+              <h3 class="u-title-2 footer__box-title">Contact us</h3>
+
+              <p class="p-1">Yellow kitchen Paris 11</p>
+              <p class="p-1">69 avenue de la Republique 75011 Paris</p>
+              <p class="p-1">0800 111 126</p>
+              <a href="#!" class="btn-p-1">contact@yellowkitchens.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__socials">
+            <a href="#!">
+              <img
+                src="img/icons/insta.svg"
+                alt="Instagram logo"
+                class="footer__socials-icon"
+              />
+            </a>
+            <a href="#!">
+              <img
+                src="img/icons/twitter.svg"
+                alt="Twitter logo"
+                class="footer__socials-icon"
+              />
+            </a>
+            <a href="#!">
+              <img
+                src="img/icons/fb.svg"
+                alt="Facebook logo"
+                class="footer__socials-icon"
+              />
+            </a>
+          </div>
+
+          <div class="footer__terms">
+            <a href="#!" class="btn-p-2">Privacy Policy</a>
+            <a href="#!" class="btn-p-2">Terms</a>
+            <p class="p-2">© 2020 Yellow kitchen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
