@@ -411,6 +411,7 @@
     justify-content: space-between;
   }
   &__card {
+    display: block;
   }
 }
 
@@ -471,9 +472,6 @@
   &__socials {
     display: flex;
     gap: 2.4rem;
-  }
-
-  &__socials-icon {
   }
 
   &__terms {

@@ -405,6 +405,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.instagram__card {
+  display: block;
+}
+
 .footer__top {
   display: flex;
   justify-content: space-between;
