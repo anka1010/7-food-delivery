@@ -107,15 +107,15 @@ ul {
   cursor: pointer;
 }
 
-.btn-order {
+.btn-cta {
   border: 2px solid var(--color-primary);
   padding: 1.85rem 2.4rem;
   transition: var(--transition);
 }
-.btn-order:hover {
+.btn-cta:hover {
   border: 2px solid var(--color-primary-light);
 }
-.btn-order span {
+.btn-cta span {
   display: block;
 }
 
@@ -165,8 +165,9 @@ ul {
   position: fixed;
   z-index: 10;
   right: 0;
-  display: none;
-  transition: display 0.2s;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s;
 }
 .menu__call {
   display: flex;
@@ -496,8 +497,8 @@ ul {
   top: 0;
 }
 
-.visible {
-  display: block;
+.open {
+  transform: scaleX(1);
 }
 
 .container {
