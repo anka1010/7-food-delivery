@@ -1,29 +1,50 @@
 //////////////////////////////////////
+// POSITIONING
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.visible {
+  display: block;
+}
+
+//////////////////////////////////////
 // CONTAINER
 .container {
-   margin: 0 auto;
-   max-width: 125.6rem;
+  margin: 0 auto;
+  max-width: 125.6rem;
 }
 
 //////////////////////////////////////
 // HEADER
 .header {
-   border-bottom: 1px solid var(--color-secondary-light-1);
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-secondary-light-1);
+  z-index: 200;
+}
+
+//////////////////////////////////////
+// NAVIGATION
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//////////////////////////////////////
+// HERO SECTION
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
 }
 
 //////////////////////////////////////
 // FOOTER
 .footer {
-   padding: 4.8rem 0;
-   background-color: var(--color-secondary-dark);
-   color: var(--color-secondary-light-1);
-
-   a {
-      color: inherit;
-      text-decoration: none;
-   }
-
-   ul {
-      list-style: none;
-   }
+  padding: 4.8rem 0;
+  background-color: var(--color-secondary-dark);
+  color: var(--color-secondary-light-1);
 }

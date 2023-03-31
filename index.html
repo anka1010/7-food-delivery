@@ -11,38 +11,72 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <title>yellowkitchen &mdash; Food delivery</title>
   </head>
   <body>
+    <!-- MOBILE MENU -->
+    <div class="menu" id="menu">
+      <!-- PHONE & WORKING HOURS -->
+      <div class="menu__call">
+        <svg class="menu__icon">
+          <use href="img/sprite.svg#icon-call"></use>
+        </svg>
+        <div>
+          <p class="btn-p-1">0800 111 126</p>
+          <p class="p-2 menu__hours">8:00 - 22:00</p>
+        </div>
+      </div>
+
+      <ul class="menu__list">
+        <li class="menu__item btn-p-1"><a href="#!">Delivery info</a></li>
+        <li class="menu__item btn-p-1"><a href="#!">About us</a></li>
+        <li class="menu__item btn-p-1"><a href="#!">Restaurants</a></li>
+        <li class="menu__item btn-p-1"><a href="#!">Specialities</a></li>
+      </ul>
+      <!-- ??? - make a component -->
+      <!-- SWITCHING LANGUAGE -->
+      <div class="switch-language">
+        <a href="#!">English</a>
+      </div>
+    </div>
+
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
+        <!-- TOP NAVIGATION -->
         <div class="navigation">
           <a href="#" class="logo">
             <img src="img/logo.svg" alt="Logo" />
           </a>
 
+          <!-- LOGIN, CART AND HAMBURGER MENU -->
           <nav class="nav">
+            <!-- LOGIN -->
             <div class="nav__icon-box">
               <svg class="nav__icon">
-                <use xlink:href="img/sprite.svg#icon-person"></use>
+                <use href="img/sprite.svg#icon-person"></use>
               </svg>
               <span class="nav__text btn-p-1">Log in</span>
             </div>
 
+            <!-- CART -->
             <div class="nav__icon-box">
               <svg class="nav__icon">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use href="img/sprite.svg#icon-cart"></use>
               </svg>
               <span class="nav__text btn-p-1">0</span>
             </div>
 
-            <div class="nav__menu">
+            <!-- HAMBURGER MENU BUTTON -->
+            <div class="nav__menu-button" id="menu_btn">
               <svg class="nav__menu-icon">
-                <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+                <use
+                  href="img/sprite.svg#icon-menu-open"
+                  id="menu_btn_icon"
+                ></use>
               </svg>
             </div>
           </nav>
@@ -57,11 +91,14 @@
         <section class="hero">
           <div class="hero__text">
             <h1 class="u-title-accent">Your Food court at home</h1>
+            <!-- ORDER BURRONS -->
             <div class="hero__order">
+              <!-- DELIVERY -->
               <button class="btn btn-order btn-p-1">
                 Delivery
                 <span class="p-2">Order in</span>
               </button>
+              <!-- TAKEOUT -->
               <button class="btn btn-order btn-p-1">
                 Takeout
                 <span class="p-2">Grab and go</span>
@@ -72,7 +109,7 @@
           <div class="hero__image">
             <img
               class="hero__image-main"
-              src="img/food/Photo-plate.png"
+              src="img/food/Photo-plate-1.png"
               alt="Food image"
             />
             <img
@@ -92,7 +129,7 @@
       <section class="usp">
         <div class="usp__icon-box">
           <svg class="usp__icon">
-            <use xlink:href="img/sprite.svg#icon-time-eat"></use>
+            <use href="img/sprite.svg#icon-time-eat"></use>
           </svg>
           <span class="p-1"
             >Delivery in all Paris <br />
@@ -101,7 +138,7 @@
         </div>
         <div class="usp__icon-box">
           <svg class="usp__icon">
-            <use xlink:href="img/sprite.svg#icon-delivery"></use>
+            <use href="img/sprite.svg#icon-delivery"></use>
           </svg>
           <span class="p-1"
             >Free delivery <br />
@@ -110,7 +147,7 @@
         </div>
         <div class="usp__icon-box">
           <svg class="usp__icon">
-            <use xlink:href="img/sprite.svg#icon-paris"></use>
+            <use href="img/sprite.svg#icon-paris"></use>
           </svg>
           <span class="p-1"
             >Only fresh <br />
@@ -127,8 +164,9 @@
             <button class="btn btn-secondary">show all</button>
           </div>
 
+          <!-- RESTAURANTS SLIDER -->
           <div class="restaurants__slider">
-            <!-- Restaurant card -->
+            <!-- RESTAURANT CARD -->
             <div class="restaurants__slider-card">
               <img
                 class="restaurants__slider-image"
@@ -142,7 +180,7 @@
                 />
               </div>
             </div>
-            <!-- Restaurant card -->
+            <!-- RESTAURANT CARD -->
             <div class="restaurants__slider-card">
               <img
                 class="restaurants__slider-image"
@@ -156,7 +194,7 @@
                 />
               </div>
             </div>
-            <!-- Restaurant card -->
+            <!-- RESTAURANT CARD -->
             <div class="restaurants__slider-card">
               <img
                 class="restaurants__slider-image"
@@ -167,7 +205,7 @@
                 <img src="img/restaurants/believe.svg" alt="Believe logo" />
               </div>
             </div>
-            <!-- Restaurant card -->
+            <!-- RESTAURANT CARD -->
             <div class="restaurants__slider-card">
               <img
                 class="restaurants__slider-image"
@@ -185,6 +223,7 @@
         </div>
       </section>
 
+      <!-- NEAREST RESTAURANT SEARCH -->
       <section class="restaurants-nearest">
         <div class="restaurants-nearest__search-box">
           <div class="restaurants-nearest__search-text">
@@ -205,6 +244,7 @@
         </div>
       </section>
 
+      <!-- SPECIALTIES SLIDER -->
       <section class="specialties">
         <div class="container">
           <div class="specialties__title">
@@ -212,58 +252,66 @@
             <button class="btn btn-secondary btn-p-1">show all</button>
           </div>
           <div class="specialties__slider">
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-bagel"></use>
+                <use href="img/sprite.svg#icon-bagel"></use>
               </svg>
               <span class="p-1">Bagel</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
+                <use href="img/sprite.svg#icon-burger"></use>
               </svg>
               <span class="p-1">Burger</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-chicken"></use>
+                <use href="img/sprite.svg#icon-chicken"></use>
               </svg>
               <span class="p-1">Chicken</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-fish"></use>
+                <use href="img/sprite.svg#icon-fish"></use>
               </svg>
               <span class="p-1">Fish</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-fishnchips"></use>
+                <use href="img/sprite.svg#icon-fishnchips"></use>
               </svg>
               <span class="p-1">Fish’Chips</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-vegan"></use>
+                <use href="img/sprite.svg#icon-vegan"></use>
               </svg>
               <span class="p-1">Salads</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-pizza"></use>
+                <use href="img/sprite.svg#icon-pizza"></use>
               </svg>
               <span class="p-1">Pizza</span>
             </div>
 
+            <!-- SPECIALTY CARD -->
             <div class="specialties__slider-card">
               <svg class="specialties__slider-icon">
-                <use xlink:href="img/sprite.svg#icon-raviolli"></use>
+                <use href="img/sprite.svg#icon-raviolli"></use>
               </svg>
               <span class="p-1">Pasta</span>
             </div>
@@ -271,6 +319,7 @@
         </div>
       </section>
 
+      <!-- USP STATISTICS -->
       <section class="usp-stats">
         <div class="usp-stats__card">
           <p class="usp-stats__card-number">1</p>
@@ -299,6 +348,7 @@
         </div>
       </section>
 
+      <!-- INSTAGRAM PHOTOS -->
       <section class="instagram">
         <div class="container">
           <div class="instagram__title">
@@ -331,9 +381,12 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
+        <!-- TOP ROW -->
         <div class="footer__top">
+          <!-- LOGO, APP STORES -->
           <div class="footer__app-stores">
             <div class="logo-box">
               <a href="#" class="logo">
@@ -353,7 +406,8 @@
             </div>
           </div>
 
-          <div class="footer__info">
+          <div class="footer__menu">
+            <!-- ABOUT US -->
             <div class="footer__box">
               <h3 class="u-title-2 footer__box-title">About us</h3>
               <ul>
@@ -375,6 +429,7 @@
               </ul>
             </div>
 
+            <!-- GET HELP -->
             <div class="footer__box">
               <h3 class="u-title-2 footer__box-title">Get help</h3>
               <ul>
@@ -396,6 +451,7 @@
               </ul>
             </div>
 
+            <!-- CONTACTS -->
             <div class="footer__box">
               <h3 class="u-title-2 footer__box-title">Contact us</h3>
 
@@ -407,6 +463,7 @@
           </div>
         </div>
 
+        <!-- BOTTOM ROW -->
         <div class="footer__bottom">
           <div class="footer__socials">
             <a href="#!">
@@ -428,5 +485,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

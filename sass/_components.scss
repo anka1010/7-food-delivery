@@ -7,7 +7,6 @@
 
 //////////////////////////////////////
 // BUTTONS
-
 // COMMON BUTTON
 .btn {
   background-color: #fff;
@@ -80,77 +79,106 @@
 }
 
 //////////////////////////////////////
-// NAVIGATION
-.navigation {
+// MENU
+.menu {
+  background-color: #fff;
+  width: 28.5rem;
+  height: 100%;
+  padding: 7.2rem 4.2rem 0 3.6rem;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  display: none;
+  transition: display 0.2s;
+
+  &__call {
+    display: flex;
+    padding: 2.2rem 0 2.4rem 0;
+    border-bottom: 1px solid var(--color-secondary-light-2);
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.6rem;
+    fill: var(--color-secondary-light-1);
+  }
+
+  &__hours {
+    color: var(--color-secondary);
+  }
+
+  &__list {
+    margin-bottom: 2.4rem;
+  }
+
+  &__item {
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary-light-2);
+    padding: 2.2rem 0;
+  }
+}
+
+.nav {
+  height: 7.2rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .nav {
-    height: 7.2rem;
+  &__icon-box {
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
+    cursor: pointer;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
 
-    &__icon-box {
-      color: var(--color-secondary);
-      fill: var(--color-secondary);
-      cursor: pointer;
+  &__icon-box:not(:last-child) {
+    margin-right: 4.8rem;
+  }
 
-      display: flex;
-      align-items: center;
-    }
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 2px;
+    fill: inherit;
+  }
 
-    &__icon-box:not(:last-child) {
-      margin-right: 4.8rem;
-    }
+  // HAMBURGER MENU
+  &__menu-button {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    fill: var(--color-secondary);
+    cursor: pointer;
+    transition: var(--transition);
 
-    &__icon {
-      height: 2.4rem;
-      width: 2.4rem;
-      margin-right: 2px;
-      fill: inherit;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    // MENU
-    &__menu {
-      height: 4.8rem;
-      width: 4.8rem;
-      border-radius: 50%;
-      box-shadow: var(--box-shadow);
-      fill: var(--color-secondary);
-      cursor: pointer;
-      transition: var(--transition);
+  &__menu-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  &__menu-button:hover {
+    box-shadow: var(--box-shadow-hover);
+  }
 
-      &-icon {
-        height: 2.4rem;
-        width: 2.4rem;
-      }
-    }
-
-    &__menu:hover {
-      box-shadow: var(--box-shadow-hover);
-    }
-
-    &__menu:active {
-      fill: var(--color-secondary-dark);
-      box-shadow: var(--box-shadow-active);
-    }
+  &__menu-button:active {
+    fill: var(--color-secondary-dark);
+    box-shadow: var(--box-shadow-active);
   }
 }
 
 //////////////////////////////////////
 // HERO SECTION
 .hero {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2.5rem;
-
   // HERO TEXT
   &__text {
     margin-top: 9.5rem;
@@ -282,6 +310,7 @@
     }
   }
 
+  // SEARCH FIELD
   &__search-input {
     input {
       color: var(--color-secondary-dark);
@@ -418,6 +447,7 @@
 //////////////////////////////////////
 // FOOTER
 .footer {
+  // TOP ROW
   &__top {
     display: flex;
     justify-content: space-between;
@@ -446,7 +476,7 @@
     }
   }
 
-  &__info {
+  &__menu {
     display: flex;
     gap: 8.3rem;
   }
@@ -457,11 +487,12 @@
       margin-bottom: 2.4rem;
     }
 
-    *[class*="p-1"] {
+    *[class*="p-1"]:not(:last-child) {
       margin-bottom: 1.6rem;
     }
   }
 
+  // BOTTOM ROW
   &__bottom {
     margin-top: 9.6rem;
 
