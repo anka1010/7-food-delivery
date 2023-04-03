@@ -114,6 +114,7 @@ ul {
 }
 .btn-cta:hover {
   border: 2px solid var(--color-primary-light);
+  color: var(--color-secondary);
 }
 .btn-cta span {
   display: block;
@@ -157,14 +158,67 @@ ul {
   fill: var(--color-secondary-dark);
 }
 
+.nav {
+  height: 7.2rem;
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__icon-box {
+  fill: var(--color-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+.nav__icon-box:hover {
+  color: var(--color-secondary-light-1);
+  fill: var(--color-secondary-light-1);
+}
+.nav__icon-box:not(:last-child) {
+  margin-right: 4.8rem;
+}
+.nav__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 2px;
+  fill: currentColor;
+}
+.nav__menu-button {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__menu-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: currentColor;
+}
+.nav__menu-button:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+.nav__menu-button:active {
+  box-shadow: var(--box-shadow-active);
+}
+.nav__menu-button:active .nav__menu-icon {
+  fill: var(--color-secondary-dark);
+}
+
 .menu {
+  min-width: max(28.5rem, (100vw - 1440px) / 2 + 28.5rem);
   background-color: #fff;
-  width: 28.5rem;
   height: 100%;
-  padding: 7.2rem 4.2rem 0 3.6rem;
+  padding-inline: 4.2rem 3.6rem;
   position: fixed;
-  z-index: 10;
   right: 0;
+  top: 7.3rem;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.2s;
@@ -180,6 +234,9 @@ ul {
   margin-right: 1.6rem;
   fill: var(--color-secondary-light-1);
 }
+.menu__phone-number {
+  color: var(--color-secondary-dark);
+}
 .menu__hours {
   color: var(--color-secondary);
 }
@@ -190,52 +247,6 @@ ul {
   color: var(--color-secondary);
   border-bottom: 1px solid var(--color-secondary-light-2);
   padding: 2.2rem 0;
-}
-
-.nav {
-  height: 7.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav__icon-box {
-  color: var(--color-secondary);
-  fill: var(--color-secondary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.nav__icon-box:not(:last-child) {
-  margin-right: 4.8rem;
-}
-.nav__icon {
-  height: 2.4rem;
-  width: 2.4rem;
-  margin-right: 2px;
-  fill: inherit;
-}
-.nav__menu-button {
-  height: 4.8rem;
-  width: 4.8rem;
-  border-radius: 50%;
-  box-shadow: var(--box-shadow);
-  fill: var(--color-secondary);
-  cursor: pointer;
-  transition: var(--transition);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__menu-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-}
-.nav__menu-button:hover {
-  box-shadow: var(--box-shadow-hover);
-}
-.nav__menu-button:active {
-  fill: var(--color-secondary-dark);
-  box-shadow: var(--box-shadow-active);
 }
 
 .hero__text {
@@ -431,8 +442,15 @@ ul {
 .instagram {
   margin: 7.2rem 0;
 }
-.instagram__title span {
+.instagram__title h2 {
   color: var(--color-secondary);
+}
+.instagram__title a {
+  color: var(--color-secondary-dark);
+  transition: var(--transition);
+}
+.instagram__title a:hover {
+  color: var(--color-secondary-light-1);
 }
 .instagram__card-box {
   margin-top: 2.1rem;
@@ -443,6 +461,16 @@ ul {
   display: block;
 }
 
+.footer {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-secondary-light-1);
+}
+.footer a {
+  transition: var(--transition);
+}
+.footer a:hover {
+  color: var(--color-secondary);
+}
 .footer__top {
   display: flex;
   justify-content: space-between;
@@ -487,14 +515,18 @@ ul {
   display: flex;
   gap: 2.4rem;
 }
+.footer__socials-icon {
+  fill: var(--color-secondary-light-1);
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: var(--transition);
+}
+.footer__socials-icon:hover {
+  fill: var(--color-secondary);
+}
 .footer__terms {
   display: flex;
   gap: 6rem;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
 
 .open {
@@ -507,10 +539,11 @@ ul {
 }
 
 .header {
-  width: 100vw;
   background-color: #fff;
   border-bottom: 1px solid var(--color-secondary-light-1);
-  z-index: 200;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navigation {
@@ -527,8 +560,6 @@ ul {
 
 .footer {
   padding: 4.8rem 0;
-  background-color: var(--color-secondary-dark);
-  color: var(--color-secondary-light-1);
 }
 
 /*# sourceMappingURL=style.css.map */

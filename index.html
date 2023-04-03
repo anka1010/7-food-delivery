@@ -17,32 +17,6 @@
     <title>yellowkitchen &mdash; Food delivery</title>
   </head>
   <body>
-    <!-- MOBILE MENU -->
-    <div class="menu" id="menu">
-      <!-- PHONE & WORKING HOURS -->
-      <div class="menu__call">
-        <svg class="menu__icon">
-          <use href="img/sprite.svg#icon-call"></use>
-        </svg>
-        <div>
-          <p class="btn-p-1">0800 111 126</p>
-          <p class="p-2 menu__hours">8:00 - 22:00</p>
-        </div>
-      </div>
-
-      <ul class="menu__list">
-        <li class="menu__item btn-p-1"><a href="#!">Delivery info</a></li>
-        <li class="menu__item btn-p-1"><a href="#!">About us</a></li>
-        <li class="menu__item btn-p-1"><a href="#!">Restaurants</a></li>
-        <li class="menu__item btn-p-1"><a href="#!">Specialities</a></li>
-      </ul>
-      <!-- ?? - make a component -->
-      <!-- SWITCHING LANGUAGE -->
-      <div class="switch-language">
-        <a href="#!">English</a>
-      </div>
-    </div>
-
     <!-- HEADER -->
     <header class="header" id="header">
       <div class="container">
@@ -78,6 +52,38 @@
                   id="menu_btn_icon"
                 ></use>
               </svg>
+            </div>
+
+            <!-- HAMBURGER MENU -->
+            <div class="menu" id="menu">
+              <!-- PHONE & WORKING HOURS -->
+              <div class="menu__call">
+                <svg class="menu__icon">
+                  <use href="img/sprite.svg#icon-call"></use>
+                </svg>
+                <div>
+                  <a href="tel:+0800111126" class="btn-p-1 menu__phone-number"
+                    >0800 111 126</a
+                  >
+                  <p class="p-2 menu__hours">8:00 - 22:00</p>
+                </div>
+              </div>
+
+              <ul class="menu__list">
+                <li class="menu__item btn-p-1">
+                  <a href="#!">Delivery info</a>
+                </li>
+                <li class="menu__item btn-p-1"><a href="#!">About us</a></li>
+                <li class="menu__item btn-p-1"><a href="#!">Restaurants</a></li>
+                <li class="menu__item btn-p-1">
+                  <a href="#!">Specialities</a>
+                </li>
+              </ul>
+              <!-- ?? - make a component -->
+              <!-- SWITCHING LANGUAGE -->
+              <div class="switch-language">
+                <a href="#!">English</a>
+              </div>
             </div>
           </nav>
         </div>
@@ -352,7 +358,9 @@
       <section class="instagram">
         <div class="container">
           <div class="instagram__title">
-            <h2 class="u-title-1">#YellowKitchens <span>in instagram</span></h2>
+            <h2 class="u-title-1">
+              <a href="#!">#YellowKitchens</a> in instagram
+            </h2>
           </div>
 
           <div class="instagram__card-box">
@@ -458,7 +466,9 @@
               <p class="p-1">Yellow kitchen Paris 11</p>
               <p class="p-1">69 avenue de la Republique 75011 Paris</p>
               <p class="p-1">0800 111 126</p>
-              <a href="#!" class="btn-p-1">contact@yellowkitchens.com</a>
+              <a href="mailto:contact@yellowkitchens.com" class="btn-p-1"
+                >contact@yellowkitchens.com</a
+              >
             </div>
           </div>
         </div>
@@ -467,13 +477,19 @@
         <div class="footer__bottom">
           <div class="footer__socials">
             <a href="#!">
-              <img src="img/icons/insta.svg" alt="Instagram logo" />
+              <svg class="footer__socials-icon">
+                <use href="img/sprite.svg#icon-insta"></use>
+              </svg>
             </a>
             <a href="#!">
-              <img src="img/icons/twitter.svg" alt="Twitter logo" />
+              <svg class="footer__socials-icon">
+                <use href="img/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
             <a href="#!">
-              <img src="img/icons/fb.svg" alt="Facebook logo" />
+              <svg class="footer__socials-icon">
+                <use href="img/sprite.svg#icon-fb"></use>
+              </svg>
             </a>
           </div>
 

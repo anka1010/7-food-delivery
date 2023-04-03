@@ -5,7 +5,6 @@ const menu = document.querySelector("#menu");
 const menu_btn_icon = document.querySelector("#menu_btn_icon");
 
 menu_btn.addEventListener("click", () => {
-  header.classList.toggle("sticky");
   menu.classList.toggle("open");
 
   menu.classList.contains("open")
